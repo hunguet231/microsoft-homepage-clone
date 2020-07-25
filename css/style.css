@@ -80,9 +80,7 @@ ul {
   text-decoration: underline;
 }
 .top-banner i {
-  position: absolute;
-  top: 16px;
-  margin-left: 5px;
+
   transition: transform 0.2s ease-in-out;
 }
 .top-banner:hover i {
@@ -378,12 +376,12 @@ ul {
     background: #f2f2f2;
     width: 50%;
     height: 100%;
-    transform: translateX(-500px);
+    transform: translateX(-450px);
     opacity: 0.9;
     border-right: #ccc 1px solid;
     padding: 30px;
     z-index:999;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   }
   .main-nav ul.main-menu li {
     padding: 10px;
