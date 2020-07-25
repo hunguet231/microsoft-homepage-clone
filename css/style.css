@@ -1,0 +1,324 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 15px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 2000px;
+  margin: auto;
+}
+
+/* Nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  font-size: 13px;
+}
+
+.main-nav .logo {
+  width: 110px;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.right-menu li:not(:first-child) a:hover{
+  border-bottom: none;
+}
+
+/* Top Banner */
+
+.top-banner {
+  width: 100%;
+  padding: 11px 35px;
+  background-color: #0067b8;
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+}
+
+.top-banner a {
+  color: #fff;
+}
+.top-banner:hover {
+  text-decoration: underline;
+}
+.top-banner i {
+  position: absolute;
+  top: 16px;
+  margin-left: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.top-banner:hover i {
+  transform: translateX(6px);
+}
+
+/* Showcase */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #fff;
+  color: #262626;
+  font-size: 15px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn i {
+  transition: transform 0.2s ease-in-out;
+}
+.btn:hover i {
+  transform: translateX(6px);
+}
+.showcase {
+  width: 100%;
+  height: 520px;
+  color: #fff;
+  background: url('../img/xbox-header.png')
+              no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 80px;
+}
+
+.showcase h1 {
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.showcase p {
+  margin-bottom: 20px;
+}
+
+.services {
+  width: 100%;
+}
+
+.main-choices {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  font-weight: 500;
+}
+
+.main-choices li {
+  margin: 10px 20px;
+}
+
+.main-choices li a:hover {
+  text-decoration: underline;
+}
+
+/* Home Card */
+.home-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 48px 0 0;
+}
+
+.home-card h2 {
+  font-weight: 500;
+  margin: 37px 0 0;
+  padding: 1px 12px 2px 0;
+}
+
+.card-item:hover img {
+  opacity: 0.9;
+}
+
+.home-card img {
+  width: 100%;
+}
+
+.home-card a {
+  color: #0067b8;
+  font-weight: 500;
+  padding: 10px 3px 7px 0;
+  margin-right: 10px;
+}
+
+.link-group a:hover span{
+  border-bottom: 2px solid #0067b8;
+}
+
+.link-group a i {
+  transition: transform 0.2s ease-in-out;
+}
+
+.link-group a:hover i {
+  transform: translateX(6px);
+}
+
+.card-item .link-group {
+  display: inline-block;
+}
+
+/* Xbox Game */
+
+.xbox-game {
+  width: 100%;
+  height: 500px;
+  margin: 50px 0;
+  background: url("../img/xbox-2.png") no-repeat center center/cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.xbox-game .box{
+  width: 450px;
+  height: auto;
+  padding: 10px 20px;
+  margin-right: 150px;
+}
+
+.xbox-game .box h1{
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.xbox-game .box p{
+  margin: 20px 0 10px;
+}
+
+.xbox-game .btn {
+  padding: 10px 20px 6px 22px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* ADA */
+.sc-2 {
+  background: url('../img/ada.png') no-repeat center center/cover;
+  margin-top: 50px;
+}
+
+.sc-2 .box {
+  width: 30%;
+}
+
+/* Follow */
+.follow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 0 30px;
+}
+
+.follow * {
+  margin-right: 8px;
+}
+
+.follow img {
+  width: 32px;
+  height: 32px;
+}
+
+.follow img:hover{
+  opacity: 0.9;
+}
+
+/* Links  and Footer*/
+.links, .footer {
+  width: 100%;
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+  font-weight: 300;
+}
+
+.links-inner {
+  width: 90%;
+  max-width: 2000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.links-inner li {
+  line-height: 2.8;
+}
+
+.links-inner a:hover {
+  text-decoration: underline;
+}
+
+.footer-inner {
+  width: 90%;
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  algin-items: center;
+  justify-content: space-between;
+}
+
+.footer-inner ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-inner li {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+.footer div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer-inner a:hover {
+  text-decoration: underline;
+}
